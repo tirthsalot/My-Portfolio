@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Tirth Salot, a Full Stack Developer focused on building responsive and modern web experiences.">
+    <title>Tirth Salot | Full Stack Developer</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-bracket"><</span>Tirth<span class="brand-dot">.</span><span class="brand-bracket">/></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#resume" class="btn btn-accent ms-lg-3 nav-resume-btn">Resume</a>
+            </div>
+            <div class="theme-toggle-wrapper ms-lg-3">
+                <button class="theme-toggle" id="themeToggle" aria-label="Change theme" title="Change Theme">
+                    <i class="fas fa-palette"></i>
+                    <span class="theme-tooltip">Theme</span>
+                </button>
+                <div class="theme-dropdown" id="themeDropdown" role="menu">
+                    <div class="theme-option active" data-theme="default" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #6FFFD2; --theme-bg: #100A18;"></span>
+                        <span class="theme-name">Plum Mint</span>
+                    </div>
+                    <div class="theme-option" data-theme="cyan" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #00FFFF; --theme-bg: #050A14;"></span>
+                        <span class="theme-name">Midnight Cyan</span>
+                    </div>
+                    <div class="theme-option" data-theme="magenta" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #FF00AA; --theme-bg: #0A050A;"></span>
+                        <span class="theme-name">Void Magenta</span>
+                    </div>
+                    <div class="theme-option" data-theme="emerald" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #00FF88; --theme-bg: #051008;"></span>
+                        <span class="theme-name">Forest Emerald</span>
+                    </div>
+                    <div class="theme-option" data-theme="orange" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #FF6B00; --theme-bg: #140804;"></span>
+                        <span class="theme-name">Volcanic Orange</span>
+                    </div>
+                    <div class="theme-option" data-theme="mono" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #FFFFFF; --theme-bg: #0A0A0A;"></span>
+                        <span class="theme-name">Graphite Mono</span>
+                    </div>
+                    <div class="theme-option" data-theme="sunset" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #FF4080; --theme-bg: #14061A;"></span>
+                        <span class="theme-name">Sunset Coral</span>
+                    </div>
+                    <div class="theme-option" data-theme="firefly" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #FF2E2E; --theme-bg: #1A0505;"></span>
+                        <span class="theme-name">Firefly Red</span>
+                    </div>
+                    <div class="theme-option" data-theme="nightcloud" role="menuitem">
+                        <span class="theme-preview" style="--theme-accent: #7dd3fc; --theme-bg: #0a0f1a;"></span>
+                        <span class="theme-name">Night Cloudy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-glow hero-glow-3"></div>
+            <!-- Night Clouds -->
+            <div class="clouds-container">
+                <div class="cloud cloud-1"></div>
+                <div class="cloud cloud-2"></div>
+                <div class="cloud cloud-3"></div>
+                <div class="cloud cloud-4"></div>
+            </div>
+            <!-- Snowfall -->
+            <div class="snowfall-container" id="snowfallContainer"></div>
+            <div class="floating-code code-1"><div class="hero"></div></div>
+            <div class="floating-code code-2">const app = () => {</div>
+            <div class="floating-code code-3">return <Portfolio />;</div>
+            <div class="floating-code code-4">};</div>
+            <div class="floating-code code-5">{ margin: 0; }</div>
+        </div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Tirth Salot</h1>
+                    <h2 class="hero-role"><span class="typed-text" id="typedText"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description">I build responsive, modern and user-focused web experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-accent btn-lg">
+                            <i class="fas fa-folder-open me-2"></i>View Projects
+                        </a>
+                        <a href="#resume" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-file-alt me-2"></i>Resume
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/tirthsalot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/salot-tirth-6691973a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-delay="300">
+                    <div class="hero-visual">
+                        <div class="code-window">
+                            <div class="code-window-header">
+                                <span class="window-dot red"></span>
+                                <span class="window-dot yellow"></span>
+                                <span class="window-dot green"></span>
+                                <span class="window-title">developer.js</span>
+                            </div>
+                            <div class="code-window-body">
+                                <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Tirth Salot"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>,
+    <span class="code-string">"JavaScript"</span>, <span class="code-string">"Bootstrap"</span>,
+    <span class="code-string">"Node.js"</span>, <span class="code-string">"MongoDB"</span>, <span class="code-string">"Git"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building web apps"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Open to opportunities"</span>
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">Get To Know Me</p>
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="about-text">
+                        <h3>Full Stack Developer <span class="accent">& Lifelong Learner</span></h3>
+                        <p>Motivated Full Stack Developer currently pursuing a BCA, with hands-on experience building responsive, modern websites using HTML5, CSS3, JavaScript, and Bootstrap. Completed focused training in web development through Web Fusion and MERN stack training through ThingQbator, with a strong foundation in front-end development and growing back-end skills in Node.js and MongoDB.</p>
+                        <p>Eager to contribute to real-world projects and continue building full-stack development expertise.</p>
+                        <div class="about-info">
+                            <div class="about-info-item">
+                                <i class="fas fa-map-marker-alt accent"></i>
+                                <span>Anandnagar, Bhavnagar, Gujarat, India</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="fas fa-graduation-cap accent"></i>
+                                <span>BCA — 2nd Year (Full Stack Web Development)</span>
+                            </div>
+                            <div class="about-info-item">
+                                <i class="fas fa-briefcase accent"></i>
+                                <span>Full Stack Developer</span>
+                            </div>
+                        </div>
+                        <a href="#resume" class="btn btn-accent mt-3">
+                            <i class="fas fa-file-alt me-2"></i>View Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-visual-card">
+                        <div class="about-tech-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git / GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">What I Work With</p>
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                            <span class="skill-tag"><i class="fas fa-desktop"></i> Media Queries</span>
+                            <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon backend-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-category-card">
+                        <div class="skill-category-icon tools-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Concepts</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fas fa-layer-group"></i> MERN Stack</span>
+                            <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                            <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="skill-tag"><i class="fas fa-code-branch"></i> Version Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">My Journey</p>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-card">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="timeline-status">Currently Pursuing — 2nd Year</p>
+                            <p class="timeline-focus">Focus: Full Stack Web Development</p>
+                            <div class="timeline-details">
+                                <div class="timeline-detail-item">
+                                    <i class="fas fa-book-open accent"></i>
+                                    <span>Web Development Fundamentals</span>
+                                </div>
+                                <div class="timeline-detail-item">
+                                    <i class="fas fa-laptop-code accent"></i>
+                                    <span>Hands-on Project Experience</span>
+                                </div>
+                                <div class="timeline-detail-item">
+                                    <i class="fas fa-certificate accent"></i>
+                                    <span>Industry Training & Certifications</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">My Achievements</p>
+                <h2 class="section-title">Certifications & <span class="accent">Training</span></h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Web Fusion</h3>
+                            <p class="cert-type">Web Development Certification</p>
+                            <p class="cert-desc">Completed focused training in web development covering HTML5, CSS3, Bootstrap, and responsive design principles.</p>
+                        </div>
+                        <div class="cert-decoration">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-card">
+                        <div class="cert-icon mern-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h3>ThingQbator</h3>
+                            <p class="cert-type">MERN Stack Developer Program</p>
+                            <p class="cert-desc">Completed MERN stack training covering MongoDB, Express.js, React, and Node.js fundamentals.</p>
+                        </div>
+                        <div class="cert-decoration">
+                            <i class="fas fa-award"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">My Work</p>
+                <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+            </div>
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            <div class="row g-4 project-grid">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up" data-delay="100" data-aos-delay="100">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper carxpert-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>carXpert</h3>
+                            <p>A comprehensive car marketplace platform with advanced search, comparison tools, and dealer management features.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-search"></i> Smart Search</span>
+                                <span class="highlight-tag"><i class="fas fa-exchange-alt"></i> Compare</span>
+                                <span class="highlight-tag"><i class="fas fa-user-tie"></i> Dealer Panel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/Car_project_bootstrap" target="_blank" rel="noopener noreferrer" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://car-project-bootstrap.vercel.app/#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="frontend" data-aos="fade-up" data-delay="200" data-aos-delay="200">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper hotel-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Hotel & Resort Website</h3>
+                            <p>Built a responsive luxury hotel website using HTML5, CSS3, and Bootstrap 5 with image carousel and hover-animated cards.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-images"></i> Carousel</span>
+                                <span class="highlight-tag"><i class="fas fa-bed"></i> Rooms & Suites</span>
+                                <span class="highlight-tag"><i class="fas fa-spa"></i> Spa & Wellness</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/Hotel-resort-Website" target="_blank" rel="noopener noreferrer" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://hotel-resort-website-murex.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="frontend" data-aos="fade-up" data-delay="300" data-aos-delay="300">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper yogo-icon">
+                                <i class="fas fa-ice-cream"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>YOGO — Ice Cream & Yoghurt</h3>
+                            <p>Developed a responsive food and beverage landing page for the Web Fusion Competition with glassmorphism design.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Bootstrap 5</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-glass-martini-alt"></i> Glassmorphism</span>
+                                <span class="highlight-tag"><i class="fas fa-star"></i> Testimonials</span>
+                                <span class="highlight-tag"><i class="fas fa-envelope"></i> Newsletter</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/Webfusion-competition" target="_blank" rel="noopener noreferrer" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#demo" class="project-link" onclick="event.stopPropagation(); showLinkNotice('Live Demo')">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up" data-delay="400" data-aos-delay="400">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper quiz-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Quiz Application</h3>
+                            <p>An interactive quiz platform with multiple categories, timed challenges, score tracking, and instant feedback.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-question-circle"></i> Multiple Categories</span>
+                                <span class="highlight-tag"><i class="fas fa-clock"></i> Timed Quizzes</span>
+                                <span class="highlight-tag"><i class="fas fa-trophy"></i> Score Tracking</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/Quiz-Application" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://quiz-application-alpha-jet.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="fullstack" data-aos="fade-up" data-delay="500" data-aos-delay="500">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper movie-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Movieflix</h3>
+                            <p>A modern movie discovery platform with search, filtering, watchlists, and detailed movie information.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-film"></i> Movie Discovery</span>
+                                <span class="highlight-tag"><i class="fas fa-search"></i> Smart Search</span>
+                                <span class="highlight-tag"><i class="fas fa-heart"></i> Watchlists</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/Movieflix" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://movieflix-eight-navy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 project-item" data-category="frontend" data-aos="fade-up" data-delay="600" data-aos-delay="600">
+                    <div class="project-card" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                        <div class="project-image">
+                            <div class="project-icon-wrapper cart-icon">
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="view-project-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>FreshCart – Online Grocery Shop</h3>
+                            <p>A modern online grocery shopping platform with product categories, cart management, and responsive design.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap 5</span>
+                            </div>
+                            <div class="project-highlights">
+                                <span class="highlight-tag"><i class="fas fa-shopping-basket"></i> Grocery Categories</span>
+                                <span class="highlight-tag"><i class="fas fa-cart-plus"></i> Cart Management</span>
+                                <span class="highlight-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/tirthsalot/CSS-PR-1-EXAM" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://css-pr-1-exam.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal1Label">carXpert</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon carxpert-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>A comprehensive car marketplace platform with advanced search, comparison tools, and dealer management features.</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-search"></i> Advanced car search & filters</li>
+                            <li><i class="fas fa-exchange-alt"></i> Side-by-side comparison tool</li>
+                            <li><i class="fas fa-user-tie"></i> Dealer dashboard & management</li>
+                            <li><i class="fas fa-heart"></i> Favorites & saved searches</li>
+                            <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                            <li><i class="fas fa-images"></i> Interactive car galleries</li>
+                            <li><i class="fas fa-chart-line"></i> Price history tracking</li>
+                            <li><i class="fas fa-calculator"></i> Financing calculator</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Location-based search</li>
+                            <li><i class="fas fa-shield-alt"></i> Verified listings</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#github" class="btn btn-accent" onclick="showLinkNotice('GitHub')">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="https://car-project-bootstrap.vercel.app/#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal2Label">Hotel & Resort Website</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon hotel-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>Built a responsive luxury hotel website using HTML5, CSS3, and Bootstrap 5 with image carousel and hover-animated cards.</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-images"></i> Hero image carousel</li>
+                            <li><i class="fas fa-bars"></i> Dropdown navigation</li>
+                            <li><i class="fas fa-mouse-pointer"></i> Hover-animated cards</li>
+                            <li><i class="fas fa-bed"></i> Rooms & Suites showcase</li>
+                            <li><i class="fas fa-utensils"></i> Dining & restaurants</li>
+                            <li><i class="fas fa-spa"></i> Spa & Wellness section</li>
+                            <li><i class="fas fa-calendar-alt"></i> Events & bookings</li>
+                            <li><i class="fas fa-mobile-alt"></i> Mobile responsive layout</li>
+                            <li><i class="fas fa-tablet-alt"></i> Tablet responsive layout</li>
+                            <li><i class="fas fa-desktop"></i> Desktop responsive layout</li>
+                            <li><i class="fas fa-envelope"></i> Contact & reservation form</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/tirthsalot/Hotel-resort-Website" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="https://hotel-resort-website-murex.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal3Label">YOGO — Ice Cream & Yoghurt</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon yogo-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>Developed a responsive food and beverage landing page for the Web Fusion Competition. Features glassmorphism hero section and animated product cards.</p>
+                        <h5>Context</h5>
+                        <p>Web Fusion Competition</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap 5</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-glass-martini-alt"></i> Glassmorphism hero section</li>
+                            <li><i class="fas fa-cube"></i> Animated product cards</li>
+                            <li><i class="fas fa-star"></i> Customer testimonials</li>
+                            <li><i class="fas fa-envelope"></i> Newsletter subscription</li>
+                            <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                            <li><i class="fas fa-heart"></i> Smooth hover animations</li>
+                            <li><i class="fas fa-shopping-cart"></i> Product showcase</li>
+                            <li><i class="fas fa-truck"></i> Delivery info section</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/tirthsalot/Webfusion-competition" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="#demo" class="btn btn-outline-light" onclick="showLinkNotice('Live Demo')">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal4Label">Quiz Application</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon quiz-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>An interactive quiz platform with multiple categories, timed challenges, score tracking, and instant feedback.</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-question-circle"></i> Multiple quiz categories</li>
+                            <li><i class="fas fa-clock"></i> Timed quiz challenges</li>
+                            <li><i class="fas fa-trophy"></i> Score tracking & leaderboards</li>
+                            <li><i class="fas fa-bolt"></i> Instant feedback on answers</li>
+                            <li><i class="fas fa-random"></i> Question randomization</li>
+                            <li><i class="fas fa-chart-bar"></i> Performance statistics</li>
+                            <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                            <li><i class="fas fa-save"></i> Progress persistence</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/tirthsalot/Quiz-Application" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="https://quiz-application-alpha-jet.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal5Label">Movieflix</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon movie-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>A modern movie discovery platform with search, filtering, watchlists, and detailed movie information.</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-film"></i> Movie discovery & browsing</li>
+                            <li><i class="fas fa-search"></i> Advanced search & filters</li>
+                            <li><i class="fas fa-heart"></i> Personal watchlists</li>
+                            <li><i class="fas fa-star"></i> Ratings & reviews</li>
+                            <li><i class="fas fa-tags"></i> Genre-based categories</li>
+                            <li><i class="fas fa-info-circle"></i> Detailed movie info</li>
+                            <li><i class="fas fa-clock"></i> Runtime & release dates</li>
+                            <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/tirthsalot/Movieflix" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="https://movieflix-eight-navy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="projectModal6Label">FreshCart – Online Grocery Shop</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-project-icon cart-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <div class="modal-project-details">
+                        <p>A modern online grocery shopping platform with product categories, cart management, and responsive design.</p>
+                        <h5>Technologies Used</h5>
+                        <div class="tech-tags-modal">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap 5</span>
+                        </div>
+                        <h5>Key Features</h5>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-shopping-basket"></i> Grocery product categories</li>
+                            <li><i class="fas fa-cart-plus"></i> Add to cart functionality</li>
+                            <li><i class="fas fa-tags"></i> Product categorization</li>
+                            <li><i class="fas fa-search"></i> Product search</li>
+                            <li><i class="fas fa-truck"></i> Delivery information</li>
+                            <li><i class="fas fa-credit-card"></i> Payment options UI</li>
+                            <li><i class="fas fa-mobile-alt"></i> Fully responsive design</li>
+                            <li><i class="fas fa-user"></i> User-friendly interface</li>
+                        </ul>
+                        <h5>Deployment</h5>
+                        <p><i class="fas fa-cloud accent me-2"></i>Vercel</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/tirthsalot/CSS-PR-1-EXAM" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                    <a href="https://css-pr-1-exam.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+                        <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">What I Offer</p>
+                <h2 class="section-title">My <span class="accent">Services</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Web Development</h3>
+                        <p>Building websites that look great and work perfectly on all devices — mobile, tablet, and desktop.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon frontend-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>Creating clean, modern, and interactive user interfaces with HTML5, CSS3, JavaScript, and Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon bootstrap-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <h3>Bootstrap Website Development</h3>
+                        <p>Professional websites built with Bootstrap framework for fast, reliable, and responsive layouts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon landing-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Landing Page Development</h3>
+                        <p>Eye-catching, conversion-focused landing pages with smooth animations and modern design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">My Profile</p>
+                <h2 class="section-title">Resume <span class="accent">Online</span></h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                    <div class="resume-info">
+                        <h3>View My Resume Online</h3>
+                        <p>Get a complete overview of my skills, experience, education, and projects in a professional PDF format.</p>
+                        <div class="resume-preview">
+                            <div class="resume-preview-card">
+                                <div class="resume-preview-header">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>PDF Document</span>
+                                </div>
+                                <div class="resume-preview-details">
+                                    <p><strong>Tirth Salot - Resume</strong></p>
+                                    <p class="resume-meta">Full Stack Developer</p>
+                                    <p class="resume-meta">Updated: 2026</p>
+                                </div>
+                                <div class="resume-preview-actions">
+                                    <a href="https://drive.google.com/file/d/1mZDPLX5fZ72OS1SQR28hhVzerGVfd6L4/view?usp=sharing" target="_blank" class="btn btn-accent">
+                                        <i class="fas fa-eye me-2"></i>View Online
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-highlights">
+                            <h4>What's Inside</h4>
+                            <ul class="resume-highlights-list">
+                                <li><i class="fas fa-user"></i> Professional Summary</li>
+                                <li><i class="fas fa-graduation-cap"></i> Education (BCA)</li>
+                                <li><i class="fas fa-code"></i> Technical Skills</li>
+                                <li><i class="fas fa-certificate"></i> Certifications</li>
+                                <li><i class="fas fa-folder-open"></i> Key Projects</li>
+                                <li><i class="fas fa-briefcase"></i> Services Offered</li>
+                                <li><i class="fas fa-envelope"></i> Contact Information</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="resume-content-wrapper">
+                        <div class="resume-section">
+                            <h4><i class="fas fa-user-tie"></i> Professional Summary</h4>
+                            <p>Motivated Full Stack Developer currently pursuing a BCA, with hands-on experience building responsive, modern websites using HTML5, CSS3, JavaScript, and Bootstrap. Completed focused training in web development through Web Fusion and MERN stack training through ThingQbator, with a strong foundation in front-end development and growing back-end skills in Node.js. Eager to contribute to real-world projects and continue building full-stack development expertise.</p>
+                        </div>
+                        <div class="resume-section">
+                            <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                            <div class="resume-item">
+                                <h5>Bachelor of Computer Applications (BCA)</h5>
+                                <p class="resume-item-meta">Currently Pursuing — 2nd Year</p>
+                                <p>Focus: Full Stack Web Development</p>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                            <div class="resume-skills-grid">
+                                <div class="resume-skill-category">
+                                    <h5>Frontend</h5>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>Bootstrap 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Media Queries</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-category">
+                                    <h5>Backend</h5>
+                                    <ul>
+                                        <li>Node.js</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-category">
+                                    <h5>Tools & Concepts</h5>
+                                    <ul>
+                                        <li>MERN Stack Fundamentals</li>
+                                        <li>Git & GitHub</li>
+                                        <li>Version Control</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                            <div class="resume-item">
+                                <h5>Web Fusion — Web Development Certification</h5>
+                            </div>
+                            <div class="resume-item">
+                                <h5>ThingQbator — MERN Stack Developer Program</h5>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h4><i class="fas fa-folder-open"></i> Key Projects</h4>
+                            <div class="resume-item">
+                                <h5>carXpert</h5>
+                                <p>Car marketplace platform with advanced search, comparison tools, and dealer management.</p>
+                            </div>
+                            <div class="resume-item">
+                                <h5>Hotel & Resort Website</h5>
+                                <p>Responsive luxury hotel website with carousel, animated cards, and booking sections.</p>
+                            </div>
+                            <div class="resume-item">
+                                <h5>YOGO — Ice Cream & Yoghurt</h5>
+                                <p>Food & beverage landing page with glassmorphism design for Web Fusion Competition.</p>
+                            </div>
+                            <div class="resume-item">
+                                <h5>Quiz Application</h5>
+                                <p>Interactive quiz platform with multiple categories, timed challenges, and score tracking.</p>
+                            </div>
+                            <div class="resume-item">
+                                <h5>Movieflix</h5>
+                                <p>Movie discovery platform with search, filtering, watchlists, and detailed info.</p>
+                            </div>
+                            <div class="resume-item">
+                                <h5>FreshCart – Online Grocery Shop</h5>
+                                <p>Online grocery shopping platform with product categories and cart management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="section-tag">Get In Touch</p>
+                <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>Have a project in mind or just want to say hello? I'm always open to discussing new opportunities, ideas, or just having a great conversation.</p>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope contact-info-icon accent"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:salottirth09@gmail.com" class="contact-link">salottirth09@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone contact-info-icon accent"></i>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+919106686907" class="contact-link">+91 9106686907</a>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-map-marker-alt contact-info-icon accent"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span>Bhavnagar, Gujarat, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://github.com/tirthsalot" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/salot-tirth-6691973a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Let's talk about..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-brand">
+                            <a href="#home" class="footer-logo">
+                                <span class="brand-bracket"><</span>Tirth<span class="brand-dot">.</span><span class="brand-bracket">/></span>
+                            </a>
+                            <p class="footer-tagline">Full Stack Developer</p>
+                            <p class="footer-desc">Building responsive, modern and user-focused web experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/tirthsalot" target="_blank" rel="noopener noreferrer"><i class="fab fa-github me-2"></i>GitHub</a></li>
+                            <li><a href="https://linkedin.com/in/salot-tirth-6691973a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in me-2"></i>LinkedIn</a></li>
+                            <li><a href="mailto:salottirth09@gmail.com"><i class="fas fa-envelope me-2"></i>Email</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="footer-heading">Contact Info</h4>
+                        <ul class="footer-links">
+                            <li><i class="fas fa-envelope me-2 accent"></i>salottirth09@gmail.com</li>
+                            <li><i class="fas fa-phone me-2 accent"></i>+91 9106686907</li>
+                            <li><i class="fas fa-map-marker-alt me-2 accent"></i>Bhavnagar, Gujarat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tirth Salot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
